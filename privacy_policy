@@ -1,0 +1,37 @@
+# Privacy Policy
+
+**Effective Date:** 18th December, 2025
+
+## Introduction
+
+The 20 Minute App ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how our application operates and how we handle your information.
+
+## Data Collection and Usage
+
+**We do not collect, store, or share any personal data.**
+
+The 20 Minute App operates entirely locally on your device. We do not have any servers, and we do not transmit any of your usage data, app selection preferences, or screen time statistics to any external parties.
+
+### Types of Data Produced
+
+- **App Usage Stats:** All usage statistics are retrieved directly from your device's system services and are displayed only to you within the app.
+- **Preferences:** Your settings (e.g., selected apps to block, time limits) are stored locally on your device using `SharedPreferences`.
+
+## Permissions
+
+The app requests the following permissions to function correctly:
+
+- **Usage Access:** To monitor the time you spend on selected apps.
+- **Notification Permission:** To show persistent notifications for the foreground service.
+
+These permissions are used solely for the core functionality of the app and not for data collection.
+
+## Contact Us
+
+If you have any questions, suggestions, or issues with the app, please feel free to contact the developer. We value your feedback!
+
+**Email:** dev.prizlo@gmail.com
+
+---
+
+_This policy is subject to change. Any changes will be updated within this section of the app._
