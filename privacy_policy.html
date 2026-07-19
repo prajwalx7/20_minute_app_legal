@@ -1,117 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy - 20 Minute App</title>
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      color: #222;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - The 20 Minute App</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --heading-color: #ffffff;
+            --accent-color: #D4FF2A; /* App's Lime Green */
+            --link-color: #D4FF2A;
+        }
 
-    h1, h2, h3 {
-      color: #000;
-    }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
 
-    h1 {
-      margin-bottom: 10px;
-    }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
 
-    hr {
-      margin: 30px 0;
-    }
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 800;
+        }
 
-    ul {
-      margin-left: 20px;
-    }
+        h2 {
+            color: var(--heading-color);
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
+        }
 
-    .effective-date {
-      font-style: italic;
-      color: #555;
-      margin-bottom: 20px;
-    }
+        h3 {
+            color: var(--heading-color);
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+        }
 
-    .contact {
-      margin-top: 20px;
-    }
-  </style>
+        p {
+            margin-bottom: 1rem;
+        }
+
+        strong {
+            color: var(--heading-color);
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            margin-bottom: 1.5rem;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .date {
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 3rem 0;
+        }
+
+        .footer-note {
+            font-style: italic;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+            .container { padding: 20px 15px; }
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <div class="date">Effective Date: July 19, 2026</div>
 
-  <h1>Privacy Policy</h1>
-  <p class="effective-date"><strong>Effective Date:</strong> 18th December, 2025</p>
+        <h2>Introduction</h2>
+        <p>The 20 Minute App ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how our application operates, how we handle your information, and how your data is backed up.</p>
 
-  <h2>Introduction</h2>
-  <p>
-    The <strong>20 Minute App</strong> ("we", "our", or "us") is committed to protecting your privacy.
-    This Privacy Policy explains how our application operates and how we handle your information.
-  </p>
+        <h2>Data Collection and Usage</h2>
+        <p>To provide a seamless experience and ensure you don't lose your progress, The 20 Minute App synchronizes your settings and streaks securely to the cloud.</p>
 
-  <h2>Data Collection and Usage</h2>
-  <p>
-    <strong>We do not collect, store, or share any personal data.</strong>
-  </p>
-  <p>
-    The 20 Minute App operates entirely locally on your device. We do not maintain any servers,
-    and we do not transmit any of your usage data, app selection preferences, or screen time
-    statistics to any external parties.
-  </p>
+        <h3>Types of Data Collected</h3>
+        <ul>
+            <li><strong>Account Information:</strong> When you sign in with Google, we collect basic profile information (name, email address, and profile picture URL) to create your account and personalize your experience.</li>
+            <li><strong>App Preferences & Progress:</strong> Your configuration settings (e.g., daily time limits, focus shortcuts, sleep hours, custom quotes) and your progress (current and longest streaks) are synced to our secure Firebase Firestore database. This allows you to restore your progress if you change devices.</li>
+            <li><strong>Push Notifications:</strong> We securely collect a device-specific Firebase Cloud Messaging (FCM) token to send you important alerts and reminders regarding your focus goals.</li>
+            <li><strong>Local App Usage Data:</strong> Live app usage statistics are retrieved directly from your device's system services. <strong>We do not upload your raw, real-time app usage history or browsing history to our servers.</strong> We only monitor usage locally on your device to enforce the limits you set.</li>
+        </ul>
 
-  <h3>Types of Data Produced</h3>
-  <ul>
-    <li>
-      <strong>App Usage Stats:</strong> All usage statistics are retrieved directly from your
-      device's system services and are displayed only to you within the app.
-    </li>
-    <li>
-      <strong>Preferences:</strong> Your settings (such as selected apps to monitor or time limits)
-      are stored locally on your device using <code>SharedPreferences</code>.
-    </li>
-  </ul>
+        <h2>Third-Party Services</h2>
+        <p>We use trusted Google services to power our backend infrastructure:</p>
+        <ul>
+            <li><strong>Google Sign-In / Firebase Authentication:</strong> For secure login.</li>
+            <li><strong>Firebase Firestore:</strong> For encrypted database storage of your settings.</li>
+            <li><strong>Firebase Cloud Messaging:</strong> For delivering notifications.</li>
+        </ul>
 
-  <h2>Permissions</h2>
-  <p>
-    The app requests the following permissions to function correctly:
-  </p>
-  <ul>
-    <li>
-      <strong>Usage Access:</strong> Required to monitor the time you spend on selected apps.
-    </li>
-    <li>
-      <strong>Notification Permission:</strong> Required to display persistent notifications for
-      the foreground service.
-    </li>
-    <li>
-      <strong>Display over other apps:</strong> To launch the 20 Minute App from the background 
-      when your time limit is reached.
-    </li>
-  </ul>
-  <p>
-    These permissions are used solely for the core functionality of the app and not for data
-    collection or tracking.
-  </p>
+        <h2>Permissions</h2>
+        <p>The app requests the following device permissions to function correctly:</p>
+        <ul>
+            <li><strong>Usage Access:</strong> To monitor the time you spend on your selected apps locally.</li>
+            <li><strong>Notification Permission:</strong> To show persistent monitoring status and push notifications.</li>
+            <li><strong>Display over other apps (System Alert Window):</strong> To launch our blocker screen ("The Void") over distracting apps when your time limit is reached.</li>
+        </ul>
+        <p>These permissions are used strictly for the core functionality of the app on your device.</p>
 
-  <h2>Contact Us</h2>
-  <p class="contact">
-    If you have any questions, suggestions, or issues regarding this Privacy Policy or the app,
-    please feel free to contact the developer.
-  </p>
-  <p>
-    <strong>Email:</strong> <a href="mailto:dev.prizlo@gmail.com">dev.prizlo@gmail.com</a>
-  </p>
+        <h2>Contact Us</h2>
+        <p>If you have any questions, suggestions, or concerns regarding your privacy, please feel free to contact the developer. We value your feedback!</p>
+        <p><strong>Email:</strong> <a href="mailto:delsigate@gmail.com">delsigate@gmail.com</a></p>
 
-  <hr />
-
-  <p>
-    <em>
-      This Privacy Policy is subject to change. Any updates will be reflected on this page.
-    </em>
-  </p>
-
+        <hr>
+        <p class="footer-note">This policy is subject to change. Any changes will be updated within this section of the app.</p>
+    </div>
 </body>
 </html>
