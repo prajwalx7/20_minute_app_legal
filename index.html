@@ -1,150 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - The 20 Minute App</title>
-    <style>
-        :root {
-            --bg-color: #121212;
-            --text-color: #e0e0e0;
-            --heading-color: #ffffff;
-            --accent-color: #D4FF2A; /* App's Lime Green */
-            --link-color: #D4FF2A;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        h1 {
-            color: var(--heading-color);
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            font-weight: 800;
-        }
-
-        h2 {
-            color: var(--heading-color);
-            font-size: 1.8rem;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 0.5rem;
-        }
-
-        h3 {
-            color: var(--heading-color);
-            font-size: 1.3rem;
-            margin-top: 1.5rem;
-        }
-
-        p {
-            margin-bottom: 1rem;
-        }
-
-        strong {
-            color: var(--heading-color);
-        }
-
-        a {
-            color: var(--link-color);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        ul {
-            margin-bottom: 1.5rem;
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        .date {
-            color: var(--accent-color);
-            font-weight: bold;
-            margin-bottom: 2rem;
-        }
-
-        hr {
-            border: 0;
-            height: 1px;
-            background: rgba(255, 255, 255, 0.1);
-            margin: 3rem 0;
-        }
-
-        .footer-note {
-            font-style: italic;
-            color: #888;
-            font-size: 0.9rem;
-        }
-
-        /* Mobile Adjustments */
-        @media (max-width: 600px) {
-            h1 { font-size: 2rem; }
-            h2 { font-size: 1.5rem; }
-            .container { padding: 20px 15px; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The 20 Minute App - Legal, Privacy & Policies</title>
+  <style>
+    :root {
+      --primary: #A3E635;
+      --bg: #101210;
+      --surface: #161A16;
+      --border: rgba(255, 255, 255, 0.1);
+      --text: #F3F4F6;
+      --text-muted: #9CA3AF;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      padding: 0;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: radial-gradient(circle at 50% 20%, rgba(163, 230, 53, 0.12), transparent 70%);
+      border-bottom: 1px solid var(--border);
+    }
+    .hero h1 {
+      font-size: 32px;
+      font-weight: 900;
+      color: #FFF;
+      letter-spacing: -0.5px;
+    }
+    .hero h1 span { color: var(--primary); }
+    .hero p {
+      color: var(--text-muted);
+      font-size: 16px;
+      max-width: 600px;
+      margin: 12px auto 0;
+    }
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    @media (min-width: 640px) {
+      .grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, border-color 0.2s;
+      text-decoration: none;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary);
+    }
+    .card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #FFF;
+      margin-bottom: 8px;
+    }
+    .card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+    .card .link-text {
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+    footer a { color: var(--primary); text-decoration: none; }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <div class="date">Effective Date: July 19, 2026</div>
+  <div class="hero">
+    <h1>20 Minute App <span>Legal & Policies</span></h1>
+    <p>Official privacy policies, terms of service, and user data governance for The 20 Minute App on Google Play.</p>
+  </div>
 
-        <h2>Introduction</h2>
-        <p>The 20 Minute App ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how our application operates, how we handle your information, and how your data is backed up.</p>
+  <main>
+    <div class="grid">
+      <a href="privacy-policy.html" class="card">
+        <div>
+          <h2>Privacy Policy</h2>
+          <p>Read how we protect your personal information, handle on-device usage tracking, and comply with Google Play Developer Policies.</p>
+        </div>
+        <div class="link-text">Read Privacy Policy &rarr;</div>
+      </a>
 
-        <h2>Data Collection and Usage</h2>
-        <p>To provide a seamless experience and ensure you don't lose your progress, The 20 Minute App synchronizes your settings and streaks securely to the cloud.</p>
+      <a href="terms-and-conditions.html" class="card">
+        <div>
+          <h2>Terms of Service</h2>
+          <p>Understand the rules, licensing, subscriptions, 3-day free trial terms, and user agreements for 20 Minute Pro.</p>
+        </div>
+        <div class="link-text">Read Terms &rarr;</div>
+      </a>
 
-        <h3>Types of Data Collected</h3>
-        <ul>
-            <li><strong>Account Information:</strong> When you sign in with Google, we collect basic profile information (name, email address, and profile picture URL) to create your account and personalize your experience.</li>
-            <li><strong>App Preferences & Progress:</strong> Your configuration settings (e.g., daily time limits, focus shortcuts, sleep hours, custom quotes) and your progress (current and longest streaks) are synced to our secure Firebase Firestore database. This allows you to restore your progress if you change devices.</li>
-            <li><strong>Push Notifications:</strong> We securely collect a device-specific Firebase Cloud Messaging (FCM) token to send you important alerts and reminders regarding your focus goals.</li>
-            <li><strong>Local App Usage Data:</strong> Live app usage statistics are retrieved directly from your device's system services. <strong>We do not upload your raw, real-time app usage history or browsing history to our servers.</strong> We only monitor usage locally on your device to enforce the limits you set.</li>
-        </ul>
-
-        <h2>Third-Party Services</h2>
-        <p>We use trusted Google services to power our backend infrastructure:</p>
-        <ul>
-            <li><strong>Google Sign-In / Firebase Authentication:</strong> For secure login.</li>
-            <li><strong>Firebase Firestore:</strong> For encrypted database storage of your settings.</li>
-            <li><strong>Firebase Cloud Messaging:</strong> For delivering notifications.</li>
-        </ul>
-
-        <h2>Permissions</h2>
-        <p>The app requests the following device permissions to function correctly:</p>
-        <ul>
-            <li><strong>Usage Access:</strong> To monitor the time you spend on your selected apps locally.</li>
-            <li><strong>Notification Permission:</strong> To show persistent monitoring status and push notifications.</li>
-            <li><strong>Display over other apps (System Alert Window):</strong> To launch our blocker screen ("The Void") over distracting apps when your time limit is reached.</li>
-        </ul>
-        <p>These permissions are used strictly for the core functionality of the app on your device.</p>
-
-        <h2>Contact Us</h2>
-        <p>If you have any questions, suggestions, or concerns regarding your privacy, please feel free to contact the developer. We value your feedback!</p>
-        <p><strong>Email:</strong> <a href="mailto:delsigate@gmail.com">delsigate@gmail.com</a></p>
-
-        <hr>
-        <p class="footer-note">This policy is subject to change. Any changes will be updated within this section of the app.</p>
+      <a href="account-deletion.html" class="card">
+        <div>
+          <h2>Account Deletion</h2>
+          <p>Learn how to permanently delete your account, authentication record, and all cloud-synced data in-app or via web request.</p>
+        </div>
+        <div class="link-text">Request Deletion &rarr;</div>
+      </a>
     </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 The 20 Minute App (com.twentyminute.app). All rights reserved.</p>
+    <p style="margin-top: 6px;">Contact Developer: <a href="mailto:delsigate@gmail.com">delsigate@gmail.com</a></p>
+  </footer>
 </body>
 </html>
+
