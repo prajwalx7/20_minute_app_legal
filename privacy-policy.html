@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - The 20 Minute App</title>
+  <style>
+    :root {
+      --primary: #A3E635;
+      --bg: #101210;
+      --surface: #161A16;
+      --border: rgba(255, 255, 255, 0.1);
+      --text: #F3F4F6;
+      --text-muted: #9CA3AF;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      padding: 0;
+    }
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+    }
+    header p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .nav-links {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+    .nav-links a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .nav-links a:hover { text-decoration: underline; }
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 36px 20px 80px;
+    }
+    h2 {
+      color: var(--primary);
+      font-size: 20px;
+      margin-top: 36px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+    }
+    h3 {
+      color: #FFF;
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+    p, li {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+    ul {
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+    li { margin-bottom: 6px; }
+    strong { color: var(--text); }
+    .callout {
+      background: rgba(163, 230, 53, 0.08);
+      border-left: 3px solid var(--primary);
+      padding: 14px 18px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .callout p { margin: 0; color: var(--text); font-size: 14px; }
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 28px 20px;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+    a { color: var(--primary); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>20 Minute App</h1>
+    <p>Privacy Policy • Effective Date: November 6, 2026</p>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="terms-and-conditions.html">Terms of Service</a>
+      <a href="account-deletion.html">Account Deletion</a>
+    </div>
+  </header>
+
+  <main>
+    <h2>1. Introduction</h2>
+    <p>The 20 Minute App ("we", "our", or "us", package: <code>com.twentyminute.app</code>) is an Android productivity application engineered to break addictive doomscrolling loops and help users regain control of their digital time. We are committed to transparency and the highest standards of user data privacy and security.</p>
+    <p>This Privacy Policy explains what data we collect, why we collect it, how it is handled, and your rights under global privacy regulations and Google Play Developer Program Policies.</p>
+
+    <h2>2. Information We Collect and How We Use It</h2>
+    
+    <h3>A. Account Information</h3>
+    <p>When you sign in using Google Sign-In (Firebase Authentication), we receive basic authentication credentials:</p>
+    <ul>
+      <li><strong>Name and Email Address:</strong> Used to create and secure your user profile, verify account ownership, and deliver customer support.</li>
+      <li><strong>Profile Picture URL:</strong> Used strictly for in-app avatar personalization.</li>
+    </ul>
+
+    <h3>B. User Settings and Preferences (Cloud Synced)</h3>
+    <p>To ensure your configuration and focus streaks are preserved across devices and app updates, the following settings are stored in our encrypted Google Cloud Firestore database:</p>
+    <ul>
+      <li>Daily time limits, circuit breaker cooldown intervals, and age/sleep configurations.</li>
+      <li>Focus streaks (current streak, longest streak, active dates).</li>
+      <li>Selected monitored application package names.</li>
+      <li>Subscription status (e.g., active plan type) to grant Pro entitlements.</li>
+    </ul>
+
+    <h3>C. In-App Subscriptions & Financial Data</h3>
+    <p>The 20 Minute App offers paid Monthly and Lifetime subscription plans. All financial transactions are processed securely through <strong>Google Play In-App Billing</strong> and verified via <strong>RevenueCat</strong>.</p>
+    <div class="callout">
+      <p><strong>Payment Security:</strong> We never collect, process, or store your credit card, debit card, bank account, or payment instrument numbers. All payment credentials are processed entirely by Google Play. RevenueCat receives an anonymous app user identifier and Google Play purchase token solely to validate your active subscription.</p>
+    </div>
+
+    <h3>D. Push Notifications</h3>
+    <p>We collect device-specific Firebase Cloud Messaging (FCM) tokens to deliver focus reminders, daily limit notifications, and streak preservation alerts. You can disable notifications at any time in Android system settings.</p>
+
+    <h2>3. Android Permissions & Sensitive API Disclosures</h2>
+    <p>To enforce digital well-being boundaries, our app requests specific Android permissions strictly for on-device functionality:</p>
+
+    <h3>A. Accessibility Service API Disclosure</h3>
+    <div class="callout">
+      <p><strong>Prominent Disclosure:</strong> The 20 Minute App uses the Android <code>AccessibilityService</code> API strictly to detect user swipe gestures inside supported short-form video feeds (such as Instagram Reels and YouTube Shorts). This enables our real-time video counter and automated cooldown triggers.</p>
+    </div>
+    <ul>
+      <li><strong>No Sensitive Data Access:</strong> The Accessibility Service does <em>NOT</em> read personal text messages, passwords, keystrokes, personal photos, or financial data.</li>
+      <li><strong>No Content Transmission:</strong> Screen content is neither recorded nor transmitted off your device. Swipes are counted locally and immediately discarded.</li>
+      <li><strong>User Control:</strong> You can enable or revoke Accessibility access at any time via Android Settings → Accessibility.</li>
+    </ul>
+
+    <h3>B. Usage Access Permission (<code>PACKAGE_USAGE_STATS</code>)</h3>
+    <p>Enables the app to monitor foreground time spent on your chosen monitored apps locally via Android's <code>UsageStatsManager</code>. <strong>Raw browsing history and real-time app usage statistics are processed solely on your device and are never sold, uploaded, or shared with third-party advertisers.</strong></p>
+
+    <h3>C. Display Over Other Apps (<code>SYSTEM_ALERT_WINDOW</code>)</h3>
+    <p>Allows the app to display the full-screen circuit breaker overlay ("The Void") over distracting apps once your configured 20-minute limit or daily quota is reached.</p>
+
+    <h3>D. Query All Packages (<code>QUERY_ALL_PACKAGES</code>)</h3>
+    <p>Used solely to present your list of installed social media applications within the setup screen so you can choose which apps to monitor and protect.</p>
+
+    <h2>4. Third-Party Services and Sub-Processors</h2>
+    <p>We work exclusively with industry-standard, GDPR/CCPA-compliant third-party providers:</p>
+    <ul>
+      <li><strong>Google Firebase (Authentication, Cloud Firestore, Cloud Messaging):</strong> Secure login, encrypted cloud backup, and push notifications.</li>
+      <li><strong>RevenueCat:</strong> Subscription entitlement verification and purchase validation.</li>
+      <li><strong>Google Play Billing:</strong> In-app payment processing.</li>
+    </ul>
+
+    <h2>5. Data Retention & Account Deletion Policy</h2>
+    <p>We retain your account information and synced settings only as long as your account remains active.</p>
+    <div class="callout">
+      <p><strong>How to Delete Your Account and All Data:</strong><br>
+      • <strong>In-App:</strong> Go to Profile → Account Settings → <em>Delete Account</em>. This permanently wipes your user profile, settings, and authentication record from Firebase.<br>
+      • <strong>Web / Email:</strong> If you have uninstalled the app or cannot access it, visit our <a href="account-deletion.html">Account Deletion Page</a> or email <a href="mailto:delsigate@gmail.com">delsigate@gmail.com</a> with the subject "Delete My Account & Data". We will process and confirm permanent deletion within 48–72 hours.</p>
+    </div>
+
+    <h2>6. Children's Privacy</h2>
+    <p>The 20 Minute App is designed for general audiences aged 13 and above. We do not knowingly collect personal information from children under 13. If you become aware that a child has provided us with personal information, please contact us so we can promptly delete it.</p>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When updates are published, the effective date at the top of this page will be revised. Material changes will be communicated via in-app notification.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>If you have any questions or feedback regarding this Privacy Policy or your personal data, please contact the developer:</p>
+    <p><strong>Email:</strong> <a href="mailto:delsigate@gmail.com">delsigate@gmail.com</a><br>
+    <strong>Developer:</strong> The 20 Minute App Team</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 The 20 Minute App. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
